@@ -17,7 +17,7 @@ rhythm = (ring 1, 0.5, 0.5, 1, 0.5, 0.5)
 
 # Define the live loop for melody
 live_loop :melody do
-  # Choose a random note from the minor pentatonic scale
+  # Choose a random note from the scales above defined
   note = E_phrygian.choose
   synth :pretty_bell
   # Play the note with a random duration
@@ -25,7 +25,7 @@ live_loop :melody do
   with_fx :reverb, mix: 0.5 do
     synth :fm, note: note, sustain: 0.125, release: 0.1
   end
-
+  
   # Sleep for a random amount of time
-  sleep 0.25
+  sleep [0.25, 0.75, 2].choose
 end
