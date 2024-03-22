@@ -18,4 +18,4 @@
               /____/\____/_/ /_/_/\___/  /_/   /_/
 
 
-<div style="text-align:center">## music_as :code <br/> code_as :art</div>
+<p align="center">music_as :code <br/> code_as :art</p>
